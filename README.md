@@ -84,14 +84,6 @@ Key business insight: 19% of High-Frequency New Flyers are already high-risk des
 
 ---
 
-## ⚠️ Known Limitation — Data Leakage Under Investigation
-
-The reported churn-model metrics (Recall 91%, AUC-ROC 0.987) are inflated by target leakage: the behavioral churn label is defined directly from `Total Flights == 0`, and several flight-count-derived features (`Total_Flights`, `Avg_Flights_Month`, `Zero_Activity_Months`) are near-deterministic proxies for that same label. This makes the model's job partly circular rather than purely predictive.
-
-Status: Unresolved — retraining with these leaking features removed (or replaced with pre-period-only aggregates) is required before these metrics can be treated as production-representative. Treat current scores as an upper bound, not a final benchmark.
-
----
-
 ## Tech Stack
 
 - Data processing: pandas, NumPy
