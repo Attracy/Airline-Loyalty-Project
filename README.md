@@ -116,4 +116,4 @@ Run all cells sequentially — Phase 2 depends on Phase 1's cleaned frames, and 
 
 ## Author
 
-Nik — M.Sc. Statistics (Applied Statistics and Informatics), IIT Bombay
+Shashank Shekhar — M.Sc. Statistics (Applied Statistics and Informatics), IIT Bombay
